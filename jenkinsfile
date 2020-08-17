@@ -1,0 +1,16 @@
+node(){
+    stage('构建'){
+        //
+       echo 'build'   
+    }
+    stage('测试'){
+        //
+       echo 'build' 
+      bat 'robot -P . tc'
+    }
+    stage('部署'){
+        //
+       echo 'build' 
+       //mail bcc: '', body: '测试pipeline', cc: '', from: '', replyTo: '', subject: '测试pipeline', to: '2803265535@qq.com'
+    }
+}
