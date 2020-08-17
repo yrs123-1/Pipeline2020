@@ -6,7 +6,7 @@ node(){
     stage('测试'){
         //
        echo 'build' 
-      bat 'robot -P . tc'
+      //bat 'robot -P . tc'
     }
     stage('部署'){
         //
